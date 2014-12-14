@@ -1,0 +1,83 @@
+<head>
+  <link rel="icon" 
+      type="image/png" 
+      href="favicon.png">
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700' rel='stylesheet' type='text/css'>
+<title>Verb the Noun!</title>
+<div id="meta">
+  <img src="http://i.imgur.com/63FymW6.png">
+  <h1>Verb the Noun!</h1>
+  <p>Are you starting a metal band, but don't know what to name it?  Let VtN name it for you! ~stay metal~ \m/</p>
+</div>
+<div id="logo">
+  <div class="color">
+    <div id="makeImage">
+      <div class="noselect" id="verb">Verb</div><br>
+      <p class="noselect"> The </p><br>
+      <div class="noselect" id="noun">Noun</div>
+    </div>
+  </div>
+</div><br>
+  <div class="buttonHolder">
+  <button id="font">
+  Font
+</button>
+<div id="dropdown">
+    <ul>
+      <li id="zero">Lorem Ipsum
+      <li id="one">Lorem Ipsum
+      <li id="two">Lorem Ipsum
+      <li id="three">Lorem Ipsum
+      <li id="four">Lorem Ipsum
+      <li id="five">Lorem Ipsum
+      <li id="six">Lorem Ipsum
+      <li id="seven">Lorem Ipsum
+      <li id="eight">Lorem Ipsum
+      <li id="nine">Lorem Ipsum
+      <li id="ten">Lorem Ipsum
+      <li id="eleven">Lorem Ipsum
+      <li id="twelve">Lorem Ipsum
+      <li id="thirteen">Lorem Ipsum
+    </ul>
+  </div><br>
+  <button id="color">Color</button>
+  <input type='text' id="picker"/><br>
+  <button class="rockon" id="save">Save</button>
+</div>
+<div id="imageContainer">
+  <a id="imageDownload" href="" download="">
+    <img type="image/png" id="finalImage" src="">
+  </a>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src='spectrum.js'></script>
+<link rel='stylesheet' href='spectrum.css' />
+<script src="generator.js"></script>
+<script src="html2canvas.js"></script>
+<script>
+  $("#picker").spectrum({
+      color: "white",
+      flat: true,
+      showInput: false,
+      showInitial: false,
+      allowEmpty: false,
+      showAlpha: false,
+      disabled: false,
+      showPalette: false,
+      showPaletteOnly: false,
+      togglePaletteOnly: false,
+      showSelectionPalette: false,
+      clickoutFiresChange: true,
+      cancelText: "",
+      chooseText: "Submit",
+      preferredFormat: "hex",
+      maxSelectionSize: 1,
+});
+</script>
+<audio>
+  <source id="audioSource"></source>
+  (Please use a modern browser for full metal effect!)
+  The audio in this application requires HTML5.
+</audio>

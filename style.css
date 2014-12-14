@@ -1,0 +1,282 @@
+*{
+	z-index: 2;
+}
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+html, body{
+	text-align: center;
+	margin: 0;
+	color: white;
+	background-image: url(black.jpg);
+	background-repeat: repeat;
+	font-family: 'Cinzel Decorative', cursive;
+	font-size: 1em;
+}
+#makeImage {
+  display:inline-block;
+  padding: 50px;
+}
+#head{
+  background-color:white;
+  color: black;
+  display:inline-block;
+  float: left;
+  padding: 3px;
+  font-family: sans-serif;
+  text-align:left;
+}
+#verb:hover, #noun:hover {
+	cursor: pointer;
+}
+
+#zero {
+	font-family: 'Cinzel Decorative', cursive;
+}
+#one {
+	font-family: metal;
+}
+#two {
+	font-family: metal2;
+}
+#three {
+	font-family: metal3;
+}
+#four {
+	font-family: metal4;
+}
+#five {
+	font-family: metal5;
+}
+#six {
+	font-family: metal6;
+}
+#seven {
+	font-family: metal7;
+}
+#eight {
+	font-family: metal8;
+}
+#nine {
+	font-family: metal9;
+}
+#ten {
+	font-family: metal10;
+}
+#eleven {
+	font-family: metal11;
+}
+#twelve {
+	font-family: metal12;
+}
+#thirteen {
+	font-family: metal13;
+}
+.font1{
+  font-family: metal1;
+}
+.font2{
+  font-family:metal2;
+}
+.font3{
+  font-family: metal3;
+}
+.font4{
+  font-family: metal4;
+}
+.font5{
+  font-family: metal5;
+}
+.font6{
+  font-family: metal6;
+}
+.font7{
+  font-family: metal7;
+}
+.font8{
+  font-family: metal8;
+}
+.font9{
+  font-family: metal9;
+}
+.font10{
+  font-family: metal10;
+}
+.font11{
+  font-family: metal11;
+}
+.font12{
+  font-family: metal12;
+}
+.font13{
+  font-family: metal;
+}
+@font-face {
+	font-family: 'metal';
+	src: url('fonts/f1.TTF');
+}
+@font-face {
+  font-family: 'metal1';
+  src: url('fonts/f2.ttf');
+}
+@font-face {
+	font-family: 'metal2';
+	src: url('fonts/f3.ttf');
+}
+@font-face {
+	font-family: 'metal3';
+	src: url('fonts/f4.ttf');
+}
+@font-face {
+	font-family: 'metal4';
+	src: url('fonts/f5.ttf');
+}
+@font-face {
+	font-family: 'metal5';
+	src: url('fonts/f6.ttf');
+}
+@font-face {
+	font-family: 'metal6';
+	src: url('fonts/f7.ttf');
+}
+@font-face {
+	font-family: 'metal7';
+	src: url('fonts/f8.ttf');
+}
+@font-face {
+	font-family: 'metal8';
+	src: url('fonts/f9.ttf');
+}
+@font-face {
+	font-family: 'metal9';
+	src: url('fonts/f10.ttf');
+}
+@font-face {
+	font-family: 'metal10';
+	src: url('fonts/f11.ttf');
+}
+@font-face {
+	font-family: 'metal11';
+	src: url('fonts/f12.ttf');
+}
+@font-face {
+	font-family: 'metal12';
+	src: url('fonts/f13.ttf');
+}
+@font-face {
+  font-family: 'metal13';
+  src: url('fonts/f0.ttf');
+}
+
+:focus {
+	outline:none;
+}
+
+.buttonHolder{
+	width: 15em;
+	display: inline-block;
+}
+
+button{
+	width: 100%;
+	height: 2em;
+	margin-top: 10px;
+	background-color: #313131;
+	border: none;
+	color: #595959;
+	font-size: 1em;
+	padding: 0.5em;
+	font-style: serif;
+	font-weight: 100;
+	display: inline-block;
+}
+
+button:active{
+	opacity: 0.3; 
+}
+
+#logo{
+	padding-bottom: 50px;
+	padding-top: 50px;
+	display: inline-block;
+	background: none;
+	width: 100%;
+}
+
+#verb, #noun, p {
+	font-family: inherit;
+	margin: 0;
+	display: inline-block;
+	line-height: 0.9em;
+	font-size: 100%;
+}
+
+p{
+	margin-right: 0.2em;
+	margin-left: 0.2em;
+	font-size: 3em
+}
+#verb, #noun {
+	font-size: 6em;
+}
+#meta{
+	display: none;
+}
+canvas {
+	display: none;
+	background: none;
+}
+img {
+	background: none;
+}
+
+@media all and (max-width: 1000px) {
+    .buttonHolder{ width: 100%; margin: 1px; font-size: 60px; padding: 5px;}
+}
+#color {
+	padding: 0;
+}
+input {
+	height: 100%;
+	width: 100%;
+	border: none;
+	height: 3em;
+}
+#submit {
+	width: 5em;
+}
+#dropdown {
+	display: none;
+}
+#dropdown ul{
+	list-style: none;
+	display: inline-block;
+	width: 14em;
+	margin-top: 0px;
+	background-color: #313131;
+	border: none;
+	font-size: 1em;
+	padding: 0.5em;
+	font-style: serif;
+	font-weight: 100;
+	display: inline-block;
+}
+#dropdown ul li {
+	margin: 12px;
+	font-size: 24px;
+	color: white;
+}
+#dropdown ul li:hover{
+	cursor: pointer;
+}
+#imageContainer {
+	display: none;
+}
+.rockon {
+  cursor: url(favicon.png), auto;
+}
