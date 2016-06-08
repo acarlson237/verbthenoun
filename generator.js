@@ -25,6 +25,11 @@
 		});
 	  $('#font').click(function () {
 	  	$('#dropdown').toggle();
+
+	  	var fontCount = $('#dropdown ul li').length;
+
+	  	$('#dropdown ul li').html($('#verb').text()+" the "+$('#noun').text());
+
 	  });
 	  $('#dropdown li').click(function () {
 	  	var font = $(this).css("font-family");
@@ -47,47 +52,47 @@ $("#flatClearable").spectrum({
 
 function newVerb(){
 	var verbs = new Array(
-		"Fight", "Destroy", "Pierce", 
-		"Tear", "Carry", "Entomb", 
-		"Reclaim", "Release", "Attack", 
-		"Raid", "Feed", "Harass", "Devour", 
-		"Surround", "Jump", "Disembowel", 
-		"Create", "Bring", "Take", "Stab", 
-		"Demolish", "Reveal", "Terminate", 
-		"Strengthen", "Charge", "Protest", 
-		"Rush", "Betray", "Raise", "Corrode", 
-		"Disfigure", "Darken", "Slaughter", 
-		"Torture", "Torment", "Kill", 
-		"Escape", "Gut", "Suffocate", 
-		"Survive", "Crown", "Bury", 
-		"Follow", "I Am", "We Are", 
-		"Conquer", "Disrespect", 
+		"Fight", "Destroy", "Pierce",
+		"Tear", "Carry", "Entomb",
+		"Reclaim", "Release", "Attack",
+		"Raid", "Feed", "Harass", "Devour",
+		"Surround", "Jump", "Disembowel",
+		"Create", "Bring", "Take", "Stab",
+		"Demolish", "Reveal", "Terminate",
+		"Strengthen", "Charge", "Protest",
+		"Rush", "Betray", "Raise", "Corrode",
+		"Disfigure", "Darken", "Slaughter",
+		"Torture", "Torment", "Kill",
+		"Escape", "Gut", "Suffocate",
+		"Survive", "Crown", "Bury",
+		"Follow", "I Am", "We Are",
+		"Conquer", "Disrespect",
 		"Dismantle", "Decay", "Incinerate",
 		"Control", "Embrace", "Contort",
-		"Rupture", "Raise", "Enter", 
-		"Burn", "Pillage", "I,",
-		"");
-	var randno = Math.floor(Math.random()*(verbs.length));
+		"Rupture", "Raise", "Enter",
+		"Burn", "Pillage", "I,", "Empire");
+	var v = verbs[Math.floor(Math.random()*(verbs.length))];
 	$('#verb').fadeOut(0);
-	$('#verb').html(verbs[randno]);
+	$('#verb').html(v);
+	$('#dropdown li').html(v);
 	$('#verb').fadeIn(300);
 };
 
 function newNoun(){
 	var nouns = new Array(
-		"Bear", "Demon", "Menace", 
-		"Dragon", "Night", "Darkness", 
-		"Enemy", "Monster", "System", 
-		"Refuge", "Power", "Pit", "Stage", 
-		"Establishment", "Crowd", 
-		"Day", "Hour", "Music", "Sound", 
-		"Memory", "Protest", "Opposition", 
-		"Resistance", "Blackness", "Pain", 
-		"Dead", "Stone", "Fate", "People", 
-		"Forgotten", "World", "Silence", 
-		"City", "Ocean", "Fire", 
-		"Affliction", "Sky", "Broken", 
-		"Castle", "Veil", "Living", 
+		"Bear", "Demon", "Menace",
+		"Dragon", "Night", "Darkness",
+		"Enemy", "Monster", "System",
+		"Refuge", "Power", "Pit", "Stage",
+		"Establishment", "Crowd",
+		"Day", "Hour", "Music", "Sound",
+		"Memory", "Protest", "Opposition",
+		"Resistance", "Blackness", "Pain",
+		"Dead", "Stone", "Fate", "People",
+		"Forgotten", "World", "Silence",
+		"City", "Ocean", "Fire",
+		"Affliction", "Sky", "Broken",
+		"Castle", "Veil", "Living",
 		"Creature", "Creator", "Dawn",
 		"Samurai", "Divide", "Void");
 	var randno = Math.floor(Math.random()*(nouns.length));
@@ -98,10 +103,10 @@ function newNoun(){
 
 function makeIMG() {
 	 		var audio = [
-	  	"audio/guitar1.mp3", "audio/guitar2.mp3", 
-	  	"audio/guitar3.mp3", "audio/guitar4.mp3", 
-	  	"audio/guitar5.mp3", "audio/guitar6.mp3", 
-	  	"audio/guitar7.mp3", "audio/guitar8.mp3", 
+	  	"audio/guitar1.mp3", "audio/guitar2.mp3",
+	  	"audio/guitar3.mp3", "audio/guitar4.mp3",
+	  	"audio/guitar5.mp3", "audio/guitar6.mp3",
+	  	"audio/guitar7.mp3", "audio/guitar8.mp3",
 	  	"audio/guitar9.mp3"
 	  	];
 	  	var rand = Math.floor(Math.random()*audio.length);
