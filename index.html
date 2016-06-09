@@ -1,83 +1,100 @@
-<head>
-  <link rel="icon" 
-      type="image/png" 
-      href="favicon.png">
-</head>
-<link rel="stylesheet" type="text/css" href="style.css">
-<link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700' rel='stylesheet' type='text/css'>
-<title>Verb the Noun!</title>
-<div id="meta">
-  <img src="http://i.imgur.com/63FymW6.png">
-  <h1>Verb the Noun!</h1>
-  <p>Are you starting a metal band, but don't know what to name it?  Let VtN name it for you! ~stay metal~ \m/</p>
-</div>
-<div id="logo">
-  <div class="color">
-    <div id="makeImage">
-      <div class="noselect" id="verb">Verb</div><br>
-      <p class="noselect"> The </p><br>
-      <div class="noselect" id="noun">Noun</div>
-    </div>
+<!DOCTYPE HTML5>
+<html>
+  <head>
+    <link rel="icon"
+        type="image/png"
+        href="favicon.png">
+  </head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700' rel='stylesheet' type='text/css'>
+  <title>Verb the Noun!</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Are you starting a metal band, but don't know what to name it?  Let VtN name it for you! ~stay metal~ \m/">
+  <meta name="keywords" content="Metal,Band,Name,Generator,Verb the Noun">
+  <meta name="author" content="Alex Carlson">
+  <body>
+  <div id="meta">
+    <img src="http://i.imgur.com/63FymW6.png">
   </div>
-</div><br>
-  <div class="buttonHolder">
-  <button id="font">
-  Font
-</button>
-<div id="dropdown">
-    <ul>
-      <li id="zero">Lorem Ipsum</li>
-      <li id="one">Lorem Ipsum</li>
-      <li id="two">Lorem Ipsum</li>
-      <li id="three">Lorem Ipsum</li>
-      <li id="four">Lorem Ipsum</li>
-      <li id="five">Lorem Ipsum</li>
-      <li id="six">Lorem Ipsum</li>
-      <li id="seven">Lorem Ipsum</li>
-      <li id="eight">Lorem Ipsum</li>
-      <li id="nine">Lorem Ipsum</li>
-      <li id="ten">Lorem Ipsum</li>
-      <li id="eleven">Lorem Ipsum</li>
-      <li id="twelve">Lorem Ipsum</li>
-      <li id="thirteen">Lorem Ipsum</li>
-    </ul>
+  <div id="logo">
+    <div class="color">
+      <div id="makeImage">
+        <div class="noselect" id="verb">Verb</div><br>
+        <p class="noselect"> The </p><br>
+        <div class="noselect" id="noun">Noun</div>
+      </div>
+    </div>
   </div><br>
-  <button id="color">Color</button>
-  <input type='text' id="picker"/><br>
-  <button class="rockon" id="save">Save</button>
-</div>
-<div id="imageContainer">
-  <a id="imageDownload" href="" download="">
-    <img type="image/png" id="finalImage" src="">
-  </a>
-</div>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src='spectrum.js'></script>
-<link rel='stylesheet' href='spectrum.css' />
-<script src="generator.js"></script>
-<script src="html2canvas.js"></script>
-<script>
-  $("#picker").spectrum({
-      color: "white",
-      flat: true,
-      showInput: false,
-      showInitial: false,
-      allowEmpty: false,
-      showAlpha: false,
-      disabled: false,
-      showPalette: false,
-      showPaletteOnly: false,
-      togglePaletteOnly: false,
-      showSelectionPalette: false,
-      clickoutFiresChange: true,
-      cancelText: "",
-      chooseText: "Submit",
-      preferredFormat: "hex",
-      maxSelectionSize: 1,
-});
-</script>
-<audio>
-  <source id="audioSource"></source>
-  (Please use a modern browser for full metal effect!)
-  The audio in this application requires HTML5.
-</audio>
+    <div class="buttonHolder">
+    <button id="font">
+    Font
+  </button>
+  <div id="dropdown">
+      <ul>
+        <li id="zero">Lorem Ipsum</li>
+        <li id="one">Lorem Ipsum</li>
+        <li id="two">Lorem Ipsum</li>
+        <li id="three">Lorem Ipsum</li>
+        <li id="four">Lorem Ipsum</li>
+        <li id="five">Lorem Ipsum</li>
+        <li id="six">Lorem Ipsum</li>
+        <li id="seven">Lorem Ipsum</li>
+        <li id="eight">Lorem Ipsum</li>
+        <li id="nine">Lorem Ipsum</li>
+        <li id="ten">Lorem Ipsum</li>
+        <li id="eleven">Lorem Ipsum</li>
+        <li id="twelve">Lorem Ipsum</li>
+        <li id="thirteen">Lorem Ipsum</li>
+      </ul>
+    </div><br>
+    <button id="color">Color</button>
+    <input type='text' id="picker"/><br>
+    <button class="rockon" id="save">Save</button>
+  </div>
+  <div id="imageContainer">
+    <a id="imageDownload" href="" download="">
+      <img type="image/png" id="finalImage" src="">
+    </a>
+  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src='spectrum.js'></script>
+  <link rel='stylesheet' href='spectrum.css' />
+  <script src="generator.js"></script>
+  <script src="html2canvas.js"></script>
+  <script>
+    $("#picker").spectrum({
+        color: "white",
+        flat: true,
+        showInput: false,
+        showInitial: false,
+        allowEmpty: false,
+        showAlpha: false,
+        disabled: false,
+        showPalette: false,
+        showPaletteOnly: false,
+        togglePaletteOnly: false,
+        showSelectionPalette: false,
+        clickoutFiresChange: true,
+        cancelText: "",
+        chooseText: "Submit",
+        preferredFormat: "hex",
+        maxSelectionSize: 1,
+  });
+  </script>
+  <audio>
+    <source id="audioSource"></source>
+    (Please use a modern browser for full metal effect!)
+    The audio in this application requires HTML5.
+  </audio>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-34297880-2', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  </body>
+</html>

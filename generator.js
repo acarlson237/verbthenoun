@@ -70,7 +70,7 @@ function newVerb(){
 		"Dismantle", "Decay", "Incinerate",
 		"Control", "Embrace", "Contort",
 		"Rupture", "Raise", "Enter",
-		"Burn", "Pillage", "I,", "Empire");
+		"Burn", "Pillage", "I,");
 	var v = verbs[Math.floor(Math.random()*(verbs.length))];
 	$('#verb').fadeOut(0);
 	$('#verb').html(v);
@@ -94,7 +94,7 @@ function newNoun(){
 		"Affliction", "Sky", "Broken",
 		"Castle", "Veil", "Living",
 		"Creature", "Creator", "Dawn",
-		"Samurai", "Divide", "Void");
+		"Samurai", "Divide", "Void", "Empire");
 	var randno = Math.floor(Math.random()*(nouns.length));
 	$('#noun').fadeOut(0);
 	$('#noun').html(nouns[randno]);
