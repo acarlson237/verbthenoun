@@ -23,15 +23,14 @@
 	 		$('p').css("color", color);
 	 		$('.sp-container').toggle();
 		});
-	  $('#font').click(function () {
-	  	$('#dropdown').toggle();
+	  $('#noun, #verb').click(function () {
 
 	  	var fontCount = $('#dropdown ul li').length;
 
-	  	$('#dropdown ul li').html($('#verb').text()+" the "+$('#noun').text());
+	  	$('ul li').html($('#verb').text()+" the "+$('#noun').text());
 
 	  });
-	  $('#dropdown li').click(function () {
+	  $('li').click(function () {
 	  	var font = $(this).css("font-family");
 	  	$('#verb').css("font-family", font);
  			$('#noun').css("font-family", font);
