@@ -12,10 +12,6 @@
      	makeIMG();
      });
 
-     $('#color').click(function () {
-     	$('.sp-container').toggle();
-     });
-
 	  $('.sp-choose').click(function () {
 	 		var color = document.getElementById('picker').value;
 	 		$('#verb').css("color", color);
@@ -39,14 +35,30 @@
 	  });
 });
 
-	$("#flat").spectrum({
-    flat: true,
-    showInput: true
-});
-$("#flatClearable").spectrum({
-    flat: true,
-    showInput: true,
-    allowEmpty:true
+$("#picker").spectrum({
+    color: tinycolor,
+    flat: bool,
+    showInput: bool,
+    showInitial: bool,
+    allowEmpty: bool,
+    showAlpha: bool,
+    disabled: bool,
+    localStorageKey: string,
+    showPalette: bool,
+    showPaletteOnly: bool,
+    togglePaletteOnly: bool,
+    showSelectionPalette: bool,
+    clickoutFiresChange: bool,
+    cancelText: string,
+    chooseText: string,
+    togglePaletteMoreText: string,
+    togglePaletteLessText: string,
+    containerClassName: string,
+    replacerClassName: string,
+    preferredFormat: string,
+    maxSelectionSize: int,
+    palette: [[string]],
+    selectionPalette: [string]
 });
 
 function newVerb(){
@@ -64,12 +76,12 @@ function newVerb(){
 		"Torture", "Torment", "Kill",
 		"Escape", "Gut", "Suffocate",
 		"Survive", "Crown", "Bury",
-		"Follow", "I Am", "We Are",
-		"Conquer", "Disrespect",
+		"Follow", "I Am", "We Are", "Disrupt",
+		"Conquer", "Disrespect", "End",
 		"Dismantle", "Decay", "Incinerate",
 		"Control", "Embrace", "Contort",
 		"Rupture", "Raise", "Enter",
-		"Burn", "Pillage", "I,");
+		"Burn", "Pillage", "I,", "Disturb");
 	var v = verbs[Math.floor(Math.random()*(verbs.length))];
 	$('#verb').fadeOut(0);
 	$('#verb').html(v);
